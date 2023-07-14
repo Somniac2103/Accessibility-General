@@ -1,0 +1,50 @@
+ACCESSIBILITY FOR WEBPAGES
+
+DISABILITY
+Blind -  Screen reader tool
+      - High constrast mode
+
+DEVELOPMENT TOOLS
+NVDA - Best Screen reader for Microsoft Windows
+  Start:  Crtl + Alt + N , 
+  End:    NVDA key(Capslock + q then enter)
+  Tab:    Move to next element
+  H:      next heading
+
+AUDIT TOOLS
+
+BEST PRACTICES
+-Add link to skip to main content at the top of the page.
+-add aria hidden to graphics like social media icon
+
+
+ARIA ATTRIBUTE
+
+aria-expanded="false" *for screen readers hamburger menu
+
+aria-label = "*Description*" *for picture explanation for like links
+aria-labelledby = provide id for caption and leave alt text empty.
+
+role = "" change semantic meaning like changing a picture to button.
+
+tabindex = "0" *order of tab sequence
+
+Aria landmark = 
+
+Aria-hidden = hides element from screen readers
+
+SEMANTIC
+-combine email in fieldset for screen reader.
+
+-if you use display: none then the screen reader will also not pick it up. However making the opacity 0% will allow the reader to pick it up and not the visual.
+-use position absolute huge number like 10000 for slidout menus so it is off screen for visual but still pick up for screen readers.
+-add role attribute when using an element in a different way then intended.
+-using the correct tag will automatically apply interactive properties. Like the tab to select it.
+-screen reader banners is equal to header.
+
+
+<Header></Header>
+<footer></footer>
+<main></main>
+
+
