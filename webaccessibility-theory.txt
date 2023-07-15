@@ -1,8 +1,14 @@
 ACCESSIBILITY FOR WEBPAGES
 
+Progressively enhance- 
+if Javascript is disabled the menus should be expanded on load.
+design web pages with Javascript disabled.
+
 DISABILITY
 Blind -  Screen reader tool
-      - High constrast mode
+low vision  - High constrast mode
+Dyslexia- Don't use all caps unless needed. 
+motorskill - make selected items at least 45dips by 45dips
 
 DEVELOPMENT TOOLS
 NVDA - Best Screen reader for Microsoft Windows
@@ -11,11 +17,25 @@ NVDA - Best Screen reader for Microsoft Windows
   Tab:    Move to next element
   H:      next heading
 
-AUDIT TOOLS
+Windows High Contrast - 
+  Enable - ALt + Left Shift + Print Screen
+
 
 BEST PRACTICES
+
+Screen Reader:
 -Add link to skip to main content at the top of the page.
 -add aria hidden to graphics like social media icon
+-add role to form as they don't have full meaning by themselves
+
+Content:
+-don't use all caps as dyslexia people may have issues reading
+-link aria label by linking text via id
+-all slected items at least 45 dips by 45 dips
+
+High Contrast mode:
+-Test theme with High Contrast mode
+-make sure all input fields has borders
 
 
 ARIA ATTRIBUTE
@@ -23,15 +43,20 @@ ARIA ATTRIBUTE
 aria-expanded="false" *for screen readers hamburger menu
 
 aria-label = "*Description*" *for picture explanation for like links
-aria-labelledby = provide id for caption and leave alt text empty.
+aria-labelledby = provide id for caption and leave alt text empty. Use with headings as well like navigation panel headings
 
 role = "" change semantic meaning like changing a picture to button.
 
 tabindex = "0" *order of tab sequence
 
-Aria landmark = 
+Aria landmark = landmark roles, landmark region
 
 Aria-hidden = hides element from screen readers
+
+Aria terminonology:
+  banner is the header
+  complementaty is the sidebar
+  contentinfo is the footer
 
 SEMANTIC
 -combine email in fieldset for screen reader.
