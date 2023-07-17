@@ -53,6 +53,8 @@ Aria landmark = landmark roles, landmark region
 
 Aria-hidden = hides element from screen readers
 
+aria-describedby = 
+
 Aria terminonology:
   banner is the header
   complementaty is the sidebar
