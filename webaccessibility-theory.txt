@@ -4,11 +4,113 @@ Progressively enhance-
 if Javascript is disabled the menus should be expanded on load.
 design web pages with Javascript disabled.
 
+get permanent ,temporary and situational disability
+Cognitive, physical, sensory disability
+
+WCAG 2.0 AA standard conformance
+
+A minimun
+AA Strive for
+AAA the best but not always possible
+
 DISABILITY
 Blind -  Screen reader tool
 low vision  - High constrast mode
 Dyslexia- Don't use all caps unless needed. 
-motorskill - make selected items at least 45dips by 45dips
+motorskill - make selected items at least 45dips by 45dips or keyboard tabable or speech recognistion.
+
+CORE PRINCIPLES
+
+POUR Guidelines
+P- Perceivable
+  Available throught sight, hearing and touch
+  every in WCAG 1
+O- Operable
+  Compatible with keyboard and mouse
+  every in WCAG 2
+U- Understandable
+  Easy to comprehend
+
+R- Robust
+  Work accross all browsers, assitive tech, mobile and old devices/browsers etc
+
+WEB ACCESSIBILITY LAWS AND GUIDELINES
+(WCAG) Web Content Accessibility Guidelines -Create by W3
+
+WCAG Standard:
+1.1.1 Non Text Content (CRITICAL)- must have alt text
+1.2.1 Audio only and Video only (CRITICAL) - must see and hear
+1.2.2 Captions pre recorded (CRITICAL)- check auto transcibe
+1.2.4 Captions live - must have Captions
+1.2.5 Audio descriptions [Prerecorded] - Users have access to audio desiptions for video content.
+1.3.1 Info and Relationships (CRITICAL)- semantic
+1.3.2 Meaningful sequence - check code order
+1.3.3 Sensory Characteristics (CRITICAL)- make sure all meaning the communicated in multiple ways like not simply changing the colour or only displaying a error.
+1.3.4 Orientation - mobile first 
+1.3.5 Indentify Input Purpose -allow autocomplete for common inputs
+1.4.1 Use of Color (CRITICAL)- use multiple mean to relay information
+1.4.2 Audio Control - if something start auto play within 3 second then there must be a way to stop it. or better don't autoplay things.
+1.4.3 Contrast (Minimum) - for text 4.5:1 use wave and manual checking
+1.4.4 Resize text - must be able to resize 200% without losing content of function 
+1.4.5 Images of Text (CRITICAL) - don't use images of text where text could be used.
+1.4.10 Reflow - Allow for zoom 400% without horizontal scrolling
+1.4.11 NonText Contrast - use min 3:1 on active UI components/essential info graphics.
+1.4.12 Text Spacing - Allow users to modify text display properties. use EM REM don't hard code. Line height min 1.5 and paragraph spacing 2
+1.4.13 Content on Hover or Focus - hover/focus content must be dismissble, hoverable persistent.
+
+2.1.1 Keyboard (CRITICAL) - Accesible by keyboard interface only.
+2.1.2 No keyboard Trap (CRITICAL) - infinite loops
+2.1.4 Character key shortcuts - Any shortcuts can: turn off remap or are active only on focus. 
+2.2.1 Timing adjustable - be careful of time limitations as some are slow due to disability be able to adjust or reset it. must be able to extend 10 times. get at least 20 seconds to respond
+2.2.2 Pause, Stop, Hide (CRITICAL) - anything that blinks, scrolls or auto updates. needs a keyboard input to pause the action.
+2.3.1 Three flashes or below threshold (CRITICAL) - no content flashes remove content that flashes flickers or blinks.
+2.4.1 Bypass blocks - ensure there is an mechanism to bypass large blocks of data which is repeated on multiple pages. Landmarks
+2.4.2 Page Titled - Helpful and clear page title that descibe Purpose
+2.4.3 Focus order - have a logical focus order
+2.4.4 Link Purpose (in Context) - Every link's purpose is clear from its context.
+2.5.1 Pointer Gestures - provide non gestural input options for any gestures.
+2.5.2 Pointer Cancellation - enable select and drag or accidentally double click.
+2.5.3 Label in Name - match visual and accessible label must match
+2.5.4 Motion Actuation - if used allow user to modify motion actuation requirments. like shaking to refresh so have a alternative
+2.4.5 Multiple Ways - many ways to reach content like search bar, table of content, sitemap, navigation bar
+2.4.6 Headings and labels - make sure headings and labels describe the topics or purpose of the content to which they belong.
+2.4.7 Focus Visible (CRITICAL) - keyboard focus is visible and clear.
+
+3.1.1 Language of page - page has language assigned. Put langauge on tp for screen reader.
+3.1.2 Language of parts - programmably indicate language or text type for specific parts like quotes in different langauges etc.
+3.2.1 On Focus (CRITICAL) - Elements must not change on focus. so the focus doesn't activate or change.
+3.2.2 On input - input must not change by simply receiving input. if focus will cahnge something the user must be inform about it prior.
+3.2.3 Consistent navigation- place things in a consistent manner.
+3.2.4 Consitent Identification - use icons and buttons consistently.
+3.3.1. Error Indentification (CRITICAL) - Clearly indentify input errors.
+3.3.2 Labels or Instructions (CRITICAL)- labels and instructions are provided when content requires user input
+3.3.3 Error Suggestion (CRITICAL) - Error message provides appropriate suggestion to correct input error
+3.3.4 Error prevention (Legal, financial data) (CRITICAL) - ensure that at least one of the following is true: Form submission is reversible , data is checked for input errors nad user is provided oppertunity to correct them, a mechanism is avalable for reveiwing , confirming and correcrtin all information before submission of the form is finalized.
+
+4.1.1 Parsing (CRITICAL) - no major errors
+4.1.2 Name, role, value (CRITICAL) - Build all elements for accessibility.
+4.1.3 Status Messages - provide status messages programmatically (Roles etc)
+
+Section 508 Rehabilital act (US only)
+
+302.2 with limited Vision - visual mode for user with limited visibility can use our stuff
+602.2 Accessibility and compatibiility Features - assitive technology can be used with our stuff
+602.3 Electronic support documentation - all documentation comforms to the level A or AA to the WCAG act 2.0
+
+
+WEB ACCESSIBILITY DOM 
+ inpsect
+
+CRITICAL ACCESSIBILITY ISSUES 
+1. No Autoplay and auto updating content. User control
+2. No Flashing conent.
+3. Keyboard access and focus
+4. Put Alt text on all images except decorative images simply add "" so screen reader will skip.
+5. Contrast ratio is good.
+6. use semantic HTML
+7. page should be able to zoom in at 400% and still make sense
+8. Don't use color or images to convey messages without alternatives
+9. make links explicit in where they take you
 
 DEVELOPMENT TOOLS
 NVDA - Best Screen reader for Microsoft Windows
@@ -19,7 +121,40 @@ NVDA - Best Screen reader for Microsoft Windows
 
 Windows High Contrast - 
   Enable - ALt + Left Shift + Print Screen
+ 
+WEB ACCESSIBILITY TESTING
 
+Keyboard to test for keyboard access
+
+Screen reader
+  JAWS
+  Voiceover for mac
+  nrrator for Windows
+  NVDA
+
+Web page magnifier
+
+color contrast checkers
+
+browser Accessibility checkers
+  -Axe devtools(Deque)
+  -WAVE (Web AIM)
+  -Ligthhouse (Google)
+
+CHECKLIST!!!
+
+Manual Testing:
+
+-Tab throught website with keyboard only and select links
+-zoom in 400% without horizontal scrolling
+-Use  screen reader to navigate
+-Check pictures for alt text
+-Check that headings are semantically structured
+-Check contrast ratios should be at least 7:1 ratio for normal text and 4.5:1 for large text
+
+Automated Testing:
+
+Browser Accessibility checkers. Axe devtools (Deque), WAVE (Web AIM),Google chrome devtools 
 
 BEST PRACTICES
 
@@ -39,6 +174,8 @@ High Contrast mode:
 
 
 ARIA ATTRIBUTE
+ARIA stand for 'Accessible Rich Internet Applications'
+
 
 aria-expanded="false" *for screen readers hamburger menu
 
