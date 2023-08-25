@@ -21,7 +21,7 @@ motorskill - make selected items at least 45dips by 45dips or keyboard tabable o
 
 CORE PRINCIPLES
 
-POUR Guidelines
+POUR Principles
 P- Perceivable
   Available throught sight, hearing and touch
   every in WCAG 1
@@ -34,13 +34,49 @@ U- Understandable
 R- Robust
   Work accross all browsers, assitive tech, mobile and old devices/browsers etc
 
+GUIDE LINES
+4 Principle -> 13 Guidelines -> 78 Success Criteria
+
+1.Perceivable - People are able to find your content
+  1.1 Text Alt - All non text content has text alternative
+
+  1.2 Time based media - Altrernative options for media. Example provide audio for visual things and visual like captions for audio things
+
+  1.3 Adaptable - Content can be presented in different ways without losing content. All content should be accessible regardless of device or device orientation. Doesn't need to be on the screen but must be reachable.
+
+  1.4 Distinguishable- Content can be seperated from its background. Text must have a contrast ratio of 4.5 while larger text may have contrast of 3. Audio: background audio must be 20 db lower than speaking voices.
+
+2. Operable - People must be able to use your website
+  2.1 Keyboard accessible - All parts of websote must be accessible with a keyboard.
+
+  2.2 Enough Time - People are given enough time to use the content on your website. Must give user control over media players, animation longer than 5 sec. 
+
+  2.3 Seizure and physical reaction- Animation that flashes more that 3 times a second. This may cause seizures.
+
+  2.4 Navigable - People can navigate the website and understand where they are. Focus ring during tab, unique titles, breadcrumbs, tabel of content
+
+  2.5 Input Modalities - All parts of a website can be accessed using input devices besides  keyboard. must work with mouse, touch screen, speech to text. 
+
+3. Understandable - People must be able to understand your website.
+  3.1 Readable - Content is readable and easy to understand. Use simple kangauge and avoid jargon when possible. use abbr to give definitions and screen reader will read the title. All pages should have a language set. when using different langauges inside the page text use span tag with lang attribute to the respective langauage.
+
+  3.2 Predictable - Web pages are predicatble in how they appar and operate. keep the structure the same.
+
+  3.3 Input Assistance - It's easy for people to correct and avoid mistakes. Label inputs, give guidance on completing inputs and give clear error message of what is wrong and how to correct it.
+
+4. Robust - Your website must work with different technologies
+  4.1 Compatible - website must work with current and future assistive technology. Can future proof our website by writing valid semantic HTML. use ARIA to extend but HTML 
+
 WEB ACCESSIBILITY LAWS AND GUIDELINES
 (WCAG) Web Content Accessibility Guidelines -Create by W3
+
+*Wcag Training locator, Daily. 
+Once throught all. increase by one day.
 
 WCAG Standard:
 1.1.1 Non Text Content (CRITICAL)- must have alt text
 1.2.1 Audio only and Video only (CRITICAL) - must see and hear
-1.2.2 Captions pre recorded (CRITICAL)- check auto transcibe
+*1.2.2 Captions pre recorded (CRITICAL)- check auto transcibe
 1.2.4 Captions live - must have Captions
 1.2.5 Audio descriptions [Prerecorded] - Users have access to audio desiptions for video content.
 1.3.1 Info and Relationships (CRITICAL)- semantic
@@ -97,6 +133,7 @@ Section 508 Rehabilital act (US only)
 602.2 Accessibility and compatibiility Features - assitive technology can be used with our stuff
 602.3 Electronic support documentation - all documentation comforms to the level A or AA to the WCAG act 2.0
 
+WEB ACCESSIBILITY TESTING
 
 WEB ACCESSIBILITY DOM 
  inpsect
@@ -122,14 +159,12 @@ NVDA - Best Screen reader for Microsoft Windows
 Windows High Contrast - 
   Enable - ALt + Left Shift + Print Screen
  
-WEB ACCESSIBILITY TESTING
-
 Keyboard to test for keyboard access
 
 Screen reader
   JAWS
   Voiceover for mac
-  nrrator for Windows
+  narrator for Windows
   NVDA
 
 Web page magnifier
@@ -166,7 +201,7 @@ Screen Reader:
 Content:
 -don't use all caps as dyslexia people may have issues reading
 -link aria label by linking text via id
--all slected items at least 45 dips by 45 dips
+-all selected items at least 45 dips by 45 dips
 
 High Contrast mode:
 -Test theme with High Contrast mode
