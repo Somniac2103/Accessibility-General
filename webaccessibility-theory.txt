@@ -1,5 +1,9 @@
 ACCESSIBILITY FOR WEBPAGES
 
+A11Y - Accessibility
+WCAG - Web Content Accessibility
+Accessibility Peace model
+
 Progressively enhance- 
 if Javascript is disabled the menus should be expanded on load.
 design web pages with Javascript disabled.
@@ -9,11 +13,18 @@ Cognitive, physical, sensory disability
 
 WCAG 2.0 AA standard conformance
 
-A minimun
-AA Strive for
-AAA the best but not always possible
+A minimun - Minimal
+AA Strive for - Optimized
+AAA the best but not always possible - Idealized
 
 DISABILITY
+Types:
+visual
+hearing
+motor
+speech
+Cognitive
+
 Blind -  Screen reader tool
 low vision  - High constrast mode
 Dyslexia- Don't use all caps unless needed. 
@@ -135,8 +146,13 @@ Section 508 Rehabilital act (US only)
 
 WEB ACCESSIBILITY TESTING
 
+Acessibility peace model:
+Minimal A
+Optimal AA
+Idealized AAA
+
 WEB ACCESSIBILITY DOM 
- inpsect
+ inspect
 
 CRITICAL ACCESSIBILITY ISSUES 
 1. No Autoplay and auto updating content. User control
@@ -192,6 +208,10 @@ Automated Testing:
 Browser Accessibility checkers. Axe devtools (Deque), WAVE (Web AIM),Google chrome devtools 
 
 BEST PRACTICES
+First 3 steps:
+1. Keyboard
+2. Form Labels
+3. Automated tests
 
 Screen Reader:
 -Add link to skip to main content at the top of the page.
