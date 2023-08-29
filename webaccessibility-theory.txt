@@ -176,6 +176,10 @@ Windows High Contrast -
   Enable - ALt + Left Shift + Print Screen
  
 Keyboard to test for keyboard access
+  - Tab : next 
+  -Shift Tba : Previous
+
+
 
 Screen reader
   JAWS
